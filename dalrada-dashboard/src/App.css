@@ -1,0 +1,205 @@
+@charset "ISO-8859-1";
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@media screen and (max-height: 450px) {
+    .tabledata{tab-size: 15px;}
+}
+table, th{
+    /* box-shadow: 0 8px 22px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+    box-shadow: 10px 20px 30px 0px white;
+    border: 1px solid #004275;
+    border-collapse: collapse;
+    width: 300px;
+    table-layout:fixed;
+    height: 20px;
+    /* padding-top: 102px; */
+}
+td{
+    border: 1px solid  #004275 ;
+    width: 300px;
+    table-layout:fixed;
+}
+th{
+    text-decoration: underline;
+}
+th, td {
+    position: sticky;
+    padding: 15px;
+    text-align: center;
+    color: #004275;
+    /* word-wrap: initial; */
+    table-layout:fixed;
+}
+table {
+    border-spacing: 5px;
+}
+.tabledata table td .fa
+{
+	color:#004275;
+}
+
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@media screen and (max-height: 450px) {
+  .login-box {padding-top: 15px;}
+  .textbox {font-size: 18px;}
+}
+body{	
+	margin: 0px;
+	padding:0px;
+	font-family: sans-serif;
+    background-color: #FFFFFF;
+}
+@keyframes mymove {
+	50% {
+		box-shadow: 10px 20px 30px 0px #004275;
+		opacity: 0.7;
+	}
+	
+}
+.login-box
+{
+	-webkit-animation: mymove 5s infinite; 
+	animation: mymove 5s infinite;
+	width: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #004275;
+	padding: 10px;
+	background-color:#FFFFFF;
+}
+.login-box a
+{
+	float: left;
+	font-size: 12px;
+	margin-bottom: 10px;
+	padding: 10px 0;
+	color:  #FF6347;	
+}
+.textbox
+{
+	width: 100%;
+	overflow: hidden;
+	font-size: 22px;
+	padding: 8px 0;
+	margin: 8px 0;
+	border-bottom: 1px solid  #004275;
+}
+.textbox i
+{
+	width: 26px;
+	float: left;
+	text-align: center;
+}
+.button{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	background: none;
+	border: 0.5px solid transparent;
+	color: #FFFFFF;
+	padding: 5px;
+	font-size: 14px;
+	cursor: pointer;
+	margin: 0;
+	width: 100px;
+	border-radius: 20px;
+	display: inline-block;
+	left: 30%;
+	position: relative;
+	background-color: #004275;
+}
+.button:hover {
+	opacity: 0.7;
+	color: #A5A5A5;
+  }
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+img.avatar {
+    width: 30%;
+    border-radius: 50%;
+    width:100% !important;  
+	height : 100% !important;  
+	max-width: 100px !important;
+	max-height: 100px !important; 	
+}
+.textbox input
+{
+	border: none;
+	outline: none;
+	background: none;
+	color: black;
+	font-size: 14px;
+	width: 80%;
+	float: left;
+	margin: 0 10px;
+}
+
+
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@media screen and (max-height: 450px) {
+  .body {padding-top: 15px;}
+  .wrapper .sidebar{font-size: 18px;}
+}
+body{	
+	margin: 0px;
+	padding:0px;
+	font-family: sans-serif;
+    background-color: #FFFFFF;
+}
+
+.wrapper
+{
+	display:  flex;
+	position: fixed;
+}
+.wrapper .sidebar
+{
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	padding: 30px 0;
+	background-color: #004275;
+}
+.wrapper .sidebar h2
+{
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 20px;
+	padding: 30px 0;
+}
+.wrapper .sidebar ul li
+{
+	padding: 15px;
+	/* border-bottom: 1px solid white; */
+	/* border-top: 1px solid white;	 */
+}
+.wrapper .sidebar ul li a
+{
+	color: #bdb8d7;
+	display: block;
+}
+.wrapper .sidebar ul li a .fa
+{
+	width: 25px;	
+}
+.wrapper .sidebar ul li:hover a
+{
+	color: white;
+}
+.wrapper .sidebar ul li.active a
+{
+	color: #FF6347;
+}
+
+.wrapper .main_content
+{
+	width: 100%;
+	margin-left: 200px;
+	color: black;
+    text-align: justify;
+    padding: 200px;
+}

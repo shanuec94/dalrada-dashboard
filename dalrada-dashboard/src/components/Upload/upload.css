@@ -1,0 +1,244 @@
+@charset "ISO-8859-1";
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+body{	
+	margin: 0px;
+	padding:0px;
+	font-family: sans-serif;
+    background-color: #FFFFFF;
+}
+.invoice{
+    box-shadow: 10px 0px 30px 0px #004275;
+    width: 1000px;
+	position: fixed;
+	top: 25%;
+	left: 59%;
+	transform: translate(-50%,80%);
+	color: #004275;
+	padding: 10px;
+    background-color:#FFFFFF;
+	display: inline-block;
+}
+table{
+	width: 1000px;
+}
+td{
+    width: 300px;
+    table-layout:fixed;
+}
+.order{
+    box-shadow: 10px 0px 30px 0px #004275;
+    width: 1000px;
+	position: absolute;
+	top: 70%;
+	left: 59%;
+	transform: translate(-50%,-50%);
+	color: #004275;
+	padding: 10px;
+    background-color:#FFFFFF;
+    display: inline-block;
+}
+.select{
+    width: 100%;
+	overflow: hidden;
+	font-size: 22px;
+	padding: 2px 0px;
+	margin: 3px 2px;
+    border-bottom: 1px solid  #004275;
+    color: #004275;
+    display: inline-block;
+}
+.date{
+	width: 100%;
+	overflow: hidden;
+	font-size: 22px;
+	padding: 2px 0px;
+	margin: 3px 2px;
+    /* border-bottom: 1px solid  #004275; */
+    color: #004275;
+    display: inline-block;
+}
+.date label{
+	font-size: 13px;
+}
+input[type=date]{
+	border: none;
+	outline: none;
+	background: none;
+	color: black;
+	font-size: 17px;
+	width: 80%;
+	float: inline-end;
+    margin: 0 10px;
+    text-align: center;
+	font-size: 18px;
+	border-bottom: 1px solid #004275;
+}
+.file{
+	width: 100%;
+	overflow: hidden;
+	font-size: 22px;
+	padding: 6px 0px;
+	margin: 8px 0;
+    color: #004275;
+    display: inline-block;
+}
+.file label
+{
+	font-size: 14px;
+}
+.invoice h2{
+    text-align: center;
+    padding: 5px;
+    text-decoration: underline;
+    font-size: 18px;
+}
+.invoice h3{
+    text-align: left;
+    padding: 5px;
+    text-decoration: underline  #004275;
+}
+.order h3{
+	text-align: left;
+    padding: 5px;
+    text-decoration: underline  #004275;
+}
+.select select{
+    border: none;
+	outline: none;
+	background: none;
+	color: black;
+	font-size: 14px;
+	width: 90%;
+	float: left;
+	margin: 0 10px;
+}
+.select i{
+    width: 30px;
+	float: left;
+	text-align: center;
+}
+/* .textbox
+{
+	width: 40%;
+	overflow: hidden;
+	font-size: 22px;
+	padding: 8px 0px;
+	margin: 8px 0;
+    border-bottom: 1px solid  #004275;
+    color: #004275;
+    display: inline-block;
+} */
+/* 
+.textbox i
+{
+	width: 30px;
+	float: left;
+	text-align: center;
+} */
+.button
+{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	background: none;
+	border: 0.5px solid transparent;
+	color: #FFFFFF;
+	padding: 5px;
+	font-size: 14px;
+	cursor: pointer;
+	margin: 1.5%;
+	width: 100px;
+	border-radius: 20px;
+	display: inline-block;
+	left: 30%;
+	transform: translate(-50%,-50%);
+    position: relative;
+}
+.button:hover {
+	opacity: 0.7;
+	color: #A5A5A5;
+  }
+.textbox input
+{
+	border: none;
+	outline: none;
+	background: none;
+	color: black;
+	font-size: 14px;
+	width: 80%;
+	float: left;
+	margin: 0 10px;
+}
+
+
+@media screen and (max-height: 450px) {
+	.body {padding-top: 15px;}
+	.wrapper .sidebar{font-size: 18px;}
+  }
+  body{	
+	  margin: 0px;
+	  padding:0px;
+	  font-family: sans-serif;
+	  background-color: #FFFFFF;
+  }
+  *{
+	  margin: 0;
+	  padding: 0;
+	  box-sizing: border-box;
+	  list-style: none;
+	  text-decoration: none;
+	  font-family: 'Josefin Sans', sans-serif;
+	  
+  }
+  .wrapper
+  {
+	  display:  flex;
+	  position: fixed;
+  }
+  .wrapper .sidebar
+  {
+	  position: fixed;
+	  width: 200px;
+	  height: 100%;
+	  padding: 30px 0;
+	  background-color: #004275;
+  }
+  .wrapper .sidebar h2
+  {
+	  color: white;
+	  text-transform: uppercase;
+	  text-align: center;
+	  margin-bottom: 20px;
+	  padding: 30px 0;
+  }
+  .wrapper .sidebar ul li
+  {
+	  padding: 15px;
+	  /* border-bottom: 1px solid white; */
+	  /* border-top: 1px solid white;	 */
+  }
+  .wrapper .sidebar ul li a
+  {
+	  color: #bdb8d7;
+	  display: block;
+  }
+  .wrapper .sidebar ul li a .fa
+  {
+	  width: 25px;	
+  }
+  .wrapper .sidebar ul li:hover a
+  {
+	  color: white;
+  }
+  .wrapper .sidebar ul li.active a
+  {
+	  color: #FF6347;
+  }
+  
+  .wrapper .main_content
+  {
+	  width: 100%;
+	  margin-left: 200px;
+	  color: black;
+	  text-align: justify;
+	  padding: 200px;
+  }
